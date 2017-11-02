@@ -1,13 +1,13 @@
-def sort_array_asc
-  a <=> b
+def sort_array_asc(array)
+  array.sort {|a, b| a <=> b}
 end
 
-def sort_array_desc
+def sort_array_desc(array)
   b <=> a
 end
 
-def sort_array_char_count
+def sort_array_char_count(array)
 end
 
-def swap_elements
+def swap_elements(array)
 end
