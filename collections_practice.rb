@@ -26,13 +26,17 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.each {|a| a[2] = '$'}
+  array.each {|e| e[2] = '$'}
 end
 
 def find_a(array)
-  array.select {|a| a.start_with?('a')}
+  array.select {|e| e.start_with?('a')}
 end
 
 def sum_array(array)
   array.inject {|a, b| a + b}
+end
+
+def add_s(array)
+  array.each_with_index.collect {|e, i| array[i] = '#{e}s'}
 end
