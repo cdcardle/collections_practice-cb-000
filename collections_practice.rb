@@ -24,3 +24,7 @@ def reverse_array(array)
   #array.reverse
   array.sort {|a, b| array.index(b) <=> array.index(a)}
 end
+
+def kesha_maker(array)
+  array.each {|a| a[2] = $}
+end
