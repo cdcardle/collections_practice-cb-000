@@ -19,3 +19,7 @@ def swap_elements_from_to(array, first, second)
   array[first], array[second] = array[second], array[first]
   array
 end
+
+def reverse_array(array)
+  array.sort {|a, b| array.index(a) < array.index(b)}
+end
